@@ -1,0 +1,161 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-01-19T20:38:34.988Z",
+        "line": 4,
+        "name": "Gel Pen Search test",
+        "description": "",
+        "id": "search-gel-pen;gel-pen-search-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7023000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the Amazon page",
+            "match": {
+              "location": "com.interview.stepDefinitions.search_StepDefinitions.user_is_on_the_amazon_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3137000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user type \"gel pens\" in the search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"gel pens\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.interview.stepDefinitions.search_StepDefinitions.user_type_in_the_search_box(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 376000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "suggestion is displayed",
+            "match": {
+              "location": "com.interview.stepDefinitions.search_StepDefinitions.suggestion_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5772000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Check the search result is containing \"Pen\" in its title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Pen\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.interview.stepDefinitions.search_StepDefinitions.check_the_search_result_is_containing_in_its_title(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 440000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Changed the sort by as price low to high",
+            "match": {
+              "location": "com.interview.stepDefinitions.search_StepDefinitions.changed_the_sort_by_as_price_low_to_high()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7605000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "click on the item that has lowest price in the search list",
+            "match": {
+              "location": "com.interview.stepDefinitions.search_StepDefinitions.click_on_the_item_that_has_lowest_price_in_the_search_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3577000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Change quantity to 2 then add to cart.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 19
+                }
+              ],
+              "location": "com.interview.stepDefinitions.search_StepDefinitions.change_quantity_to_then_add_to_cart(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 158000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Empty cart",
+            "match": {
+              "location": "com.interview.stepDefinitions.search_StepDefinitions.empty_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 381000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "validate \"Your Amazon Cart is empty.\"message.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your Amazon Cart is empty.\"",
+                  "offset": 9
+                }
+              ],
+              "location": "com.interview.stepDefinitions.search_StepDefinitions.validateMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Wip"
+          }
+        ]
+      }
+    ],
+    "name": "search Gel Pen",
+    "description": "",
+    "id": "search-gel-pen",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/search.feature",
+    "tags": []
+  }
+]
